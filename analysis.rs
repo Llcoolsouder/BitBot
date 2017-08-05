@@ -21,7 +21,7 @@ type Coin = Vec<Coin_data>;
 
 fn GetRanks (db: String, table: String) -> Vec<u8> {
 	let conn = rusqlite::Connection::open_in_memory().unwrap();
-	let mut stmt = conn.prepar(format!("SELECT rank FROM {}", table));
+	let mut stmt = conn.prepare(format!("SELECT rank FROM {}", table));
 }
 	
 fn GetData(db: String, table: String) -> Coin {
