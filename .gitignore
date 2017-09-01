@@ -1,1 +1,8 @@
+target/
+**/*.rs.bk
+Cargo.lock
+
+
 *.db
+*.csv
+kraken_query_test.py

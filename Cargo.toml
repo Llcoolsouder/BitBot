@@ -1,0 +1,22 @@
+[package]
+name = "BitBot"
+version = "0.1.0"
+authors = ["Lonnie Souder <souderl9@students.rowan.edu>"]
+repository = "htps://github.com/llcoolsouder/BitBot.git"
+homepage = "htps://github.com/llcoolsouder/BitBot.git"
+readme = "README.md"
+description = "Cryptocurrency trading bot"
+
+[dependencies]
+num = "^0.1.40"
+diesel = "0.16.0"
+time = "0.1.38"
+
+[lib]
+name = "statistics"
+path = "src/statistics.rs"
+
+[[bin]]
+name = "BitBot"
+path = "src/BitBot.rs"
+
